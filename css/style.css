@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+}
+body{
+  background: #222;
+}
+.card{
+  background: linear-gradient(138deg , #00feba , #5b548a);
+  width: 90%;
+  max-width: 480px;
+  margin: auto;
+  text-align: center;
+  color: white;
+  padding: 40px 45px;
+  margin-top: 100px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.card .search{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card .search input{
+  border: none;
+  outline: none;
+  font-size: 11px;
+  background: #ebfffc;
+  color: #555;
+  padding: 10px 25px;
+  margin-right: 16px;
+  flex: 1;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.card .search button{
+  border: none;
+  outline: none;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.card .search button img{
+  width: 14px;
+  padding-top: 5px;
+}
+
+.card .weather .weather-icon{
+  width: 170px;
+  margin-top: 10px;
+}
+.card .weather h1.temp{
+  font-size: 70px;
+  font-weight: 700;
+}
+.card .weather h2.city{
+  font-size: 45px;
+  font-weight: 500;
+  margin-top: -10px;
+}
+.card .weather .details{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
+  margin-top: 50px;
+}
+.card .weather .details .col{
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.card .weather .details .col img{
+  width: 40px;
+  margin-right: 10px;
+}
+.card .weather .details .col p.wind,
+.card .weather .details .col p.humidity{
+  font-size: 22px;
+}
+.weather{
+  display: none;
+}
+.card .invalid{
+  text-align: left;
+  margin-left: 10px;
+  margin-top: 7px;
+  font-size: 12px;
+  display: none;
+}
